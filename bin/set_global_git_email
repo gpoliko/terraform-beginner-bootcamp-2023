@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Email address to use
+EMAIL="60165179+gpoliko@users.noreply.github.com"
+
+# Configure git global user email
+git config --global user.email "$EMAIL"
+
+# Set and evaluate Gitpod environment variable
+gp env GITPOD_GIT_USER_EMAIL=$EMAIL
+eval $(gp env -e GITPOD_GIT_USER_EMAIL=$EMAIL)
+
+echo "Configuration updated with email: $EMAIL"

@@ -132,6 +132,10 @@ If you want Env Vars to persist across all future bash terminals that you open, 
 
 #### Persisting Env Vars in Gitpod
 
+> **NOTE**: Because I have set my Github email to private, Gitpod cannot determine what my email is for committing and pushing to remote.
+Which means that I have to set the global git email and Gitpod env var to my private email every time I launch Gitpod.
+***To get around this I have created a bash script, [set_global_git_email](./bin/set_global_git_email) to automate setting the email for me.***
+
 We can persist env vars into gitpod by storing them in Gitpod Secrets Storage.
 ```
 gp env HELLO='world'
