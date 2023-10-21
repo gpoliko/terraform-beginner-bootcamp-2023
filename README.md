@@ -231,3 +231,11 @@ If you lose this file, you lose knowing the state of your infrastructure.
 ### Terraform Directory
 
 `.terraform` directory contains binaries of Terraform providers.
+
+## AWS Basics
+
+### S3 Buckets
+
+#### Creating an S3 Bucket
+
+Bucket names must be unique within the global namespace, and can only accept lowercase characters and numbers.
