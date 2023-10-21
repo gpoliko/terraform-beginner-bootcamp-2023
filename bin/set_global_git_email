@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Email address to use
 EMAIL="60165179+gpoliko@users.noreply.github.com"
