@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Define the alias
+ALIAS='alias tf="terraform"'
+
+# Check if the alias already exists in .bash_profile
+if grep -Fxq "$ALIAS" ~/.bash_profile
+then
+    echo "Alias already exists in .bash_profile"
+else
+    # If not, append it to .bash_profile
+    echo "$ALIAS" >> ~/.bash_profile
+    echo "Alias added to .bash_profile"
+fi
+
+# Optionally: source .bash_profile to apply changes immediately
+source ~/.bash_profile
+
+
